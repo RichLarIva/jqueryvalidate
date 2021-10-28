@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+</head>
+<body>
+    <h1>Forms thing</h1>
+    <hr>
+    <br>
+    <form action="registered.html" name="registration" onsubmit="return submitForm()">
+        <fieldset>
+            <legend>User info</legend>
+            <label for="username">Username: </label>
+            <input type="text" name="Username" id="username" placeholder="Username">
+            <br>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="john@doe.com">
+            <br>
+            <br>
+            <label for="pwdOne">Password: </label>
+            <input type="password" name="password" id="pwdOne" placeholder="password">
+            <br>
+            <br>
+            <label for="confirmPWD">Confirm password: </label>
+            <input type="password" name="password" placeholder="Confirm password" id="confirmPWD" >
+            <span id="passWordWrong"></span>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Terms and stuff</legend>
+            <label for="terms">I have read terms and conditions</label>
+            <input type="checkbox" name="terms" id="terms" required>
+            <br>
+            <span id="termsNotSubmit"></span>
+            <br>
+            <input type="submit" onclick="submitForm()" id="submitBtn">
+        </fieldset>
+    </form>
+
+
+    <script src="js/formsStuff.js"></script>
+</body>
+</html>

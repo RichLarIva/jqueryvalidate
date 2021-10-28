@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+span{
+    color:rgb(255, 0, 0);
+    background-color: black;
+}
+
+form{
+    background-color: cadetblue;
+    width:50%;
+    height:50%;
+    margin: auto;
+    border:double 5px rgb(105, 19, 10);
+}
+
+fieldset{
+    background-color: cadetblue;
+    color:black;
+    font-size:20px;
+    height:20vh;
+    width:50vw;
+    border:5px solid rgb(105, 19, 10);
+}
+
+#submitBtn{
+    background-color:slategrey;
+    color:white;
+    height:10vh;
+    width:25vw;
+    font-size:2em;
+}
+
+header{
+    height:15vh;
+    background-color: green;
+}
+
+#registeredDiv{
+    height:85vh;
+    background-color: rgb(85, 129, 19);
+}
+
+#REGISTERED{
+    font-size: 5em;
+    padding-top: 50vh;
+    text-align: center;
+    color:white;
+}
